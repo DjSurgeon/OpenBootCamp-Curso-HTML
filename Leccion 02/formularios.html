@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Formularios</title></head>
+    <body>
+        <!--La etiqueta de formulario nos permite recoger
+        informacion de un usuario-->
+        <form action="resultados.html" method="GET">
+            <div>
+                <label for="nombre-usuario">Nombre de usuario</label>
+                <input type="text" name="nombre-usuario" id="nombre-usuario" required />
+            </div>
+            <div>
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="comentarios"></textarea>
+            </div>
+            <div>
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" required />
+            </div>
+            <div>
+                <label for="email">¿Cual es tu email?</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+                <label for="edad">¿Cual es tu edad?</label>
+                <input type="number" name="edad" id="edad" min="18" />
+            </div>
+            <div>
+                <label for="fecha">¿Cual es tu fecha de nacimiento?</label>
+                <input type="date" name="fecha" id="fecha" required />
+            </div>
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </body>
+</html>
